@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <calculator-code number1="100" number2="300"></calculator-code>
+
+    <script>
+      const element = document.querySelector("calculator-code");
+      element.addEventListener("onCalculation", (event) => {
+        console.log(event.detail);
+      });
+    </script>
+    <script type="text/javascript" src="dom-communication-element.js" />
+  </body>
+</html>
